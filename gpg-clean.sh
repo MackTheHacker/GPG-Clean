@@ -5,6 +5,7 @@ if [ -z "$1" ]; then
 else
 	echo "$1" 
 	gpg --cipher-algo AES256 -o $1.gpg -c $1 && rm $1
+	echo "Done"
 fi
 
 
